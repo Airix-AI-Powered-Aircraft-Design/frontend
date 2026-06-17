@@ -21,8 +21,19 @@ export function HomePageModel(props: any){
 
     const resetRotation = () => {
         if (!modelRef.current) return
+        
+        const current = modelRef.current.rotation.y
+        const target = defaultRotationY
+        
+        // Calculate the shortest path to the default rotation (prevent "unwinding")
+        let diff = (target - current) % (Math.PI * 2)
+        if (diff < -Math.PI) diff += Math.PI * 2
+        if (diff > Math.PI) diff -= Math.PI * 2
+        
+        const closestTarget = current + diff
+
         gsap.to(modelRef.current.rotation, {
-            y: defaultRotationY,
+            y: closestTarget,
             duration: 1.5,
             ease: "power2.out"
         })
@@ -41,12 +52,6 @@ export function HomePageModel(props: any){
     }
 
     useEffect(() => {
-        const handleWheel = (e: WheelEvent) => {
-            if (!modelRef.current) return
-            modelRef.current.rotation.y += e.deltaY * 0.005
-            triggerInteraction()
-        }
-
         const handlePointerDown = (e: PointerEvent) => {
             isDragging.current = true
             previousMousePosition.current = { x: e.clientX, y: e.clientY }
@@ -66,13 +71,11 @@ export function HomePageModel(props: any){
             triggerInteraction()
         }
 
-        window.addEventListener('wheel', handleWheel, { passive: true })
         window.addEventListener('pointerdown', handlePointerDown)
         window.addEventListener('pointermove', handlePointerMove)
         window.addEventListener('pointerup', handlePointerUp)
 
         return () => {
-            window.removeEventListener('wheel', handleWheel)
             window.removeEventListener('pointerdown', handlePointerDown)
             window.removeEventListener('pointermove', handlePointerMove)
             window.removeEventListener('pointerup', handlePointerUp)
