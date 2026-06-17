@@ -32,14 +32,14 @@ export default function DesignSystem() {
 
       <div className="w-full max-w-5xl space-y-24">
         
-        {/* 01 — PRODUCT MOCKUPS & CALLOUTS */}
+        {/* 01 — AEROSPACE MODULES & CALLOUTS */}
         <section className="space-y-8">
           <div className="text-[12px] font-medium tracking-[0.15em] text-light-muted dark:text-dark-muted uppercase border-b border-light-border dark:border-dark-border pb-2 mb-8">
-            01 &mdash; PRODUCT MOCKUPS & CALLOUTS
+            01 &mdash; AEROSPACE MODULES & CALLOUTS
           </div>
           
           <h2 className="text-4xl md:text-5xl tracking-tight font-serif mb-10 text-light-text dark:text-dark-text">
-            Product mockups + coral callouts
+            Intelligent modules + coral callouts
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -52,10 +52,10 @@ export default function DesignSystem() {
                 </svg>
               </div>
               <h3 className="text-[22px] font-serif text-light-text dark:text-dark-text mt-3">
-                Code understanding
+                Prompt-to-Prototype
               </h3>
               <p className="text-light-muted dark:text-dark-muted text-[15px] leading-relaxed">
-                From small refactors to large codebase migrations, Claude reads code with the depth of a senior engineer.
+                Describe your aircraft in plain language, and Airix reasons about physics to generate a structured 3D model in seconds.
               </p>
             </div>
 
@@ -67,47 +67,47 @@ export default function DesignSystem() {
                 </svg>
               </div>
               <h3 className="text-[22px] font-serif text-light-text dark:text-dark-text mt-3">
-                Safe by design
+                Live Physics Dashboard
               </h3>
               <p className="text-light-muted dark:text-dark-muted text-[15px] leading-relaxed">
-                Built with constitutional AI training to be helpful, harmless, and honest across diverse use cases.
+                Instant recalculation of weight distribution, drag coefficient, and structural stress on every component swap.
               </p>
             </div>
 
             <div className="p-8 rounded-2xl border border-light-border dark:border-dark-border bg-transparent transition-colors flex flex-col gap-4 mt-2">
               <h3 className="text-3xl font-serif text-light-text dark:text-dark-text mt-1">
-                Opus 4
+                Predictive Maintenance
               </h3>
               <p className="text-light-muted dark:text-dark-muted text-[15px] leading-relaxed flex-grow">
-                Our most intelligent model for complex agentic tasks and long-horizon reasoning.
+                Live health models for your fleet, predicting component failures before they happen using sensor telemetry.
               </p>
               <a href="#" className="text-light-primary dark:text-dark-primary text-[15px] font-medium mt-3 hover:underline transition-all w-fit">
-                View capabilities &rarr;
+                View predictive engine &rarr;
               </a>
             </div>
 
             <div className="p-8 rounded-2xl border border-light-border dark:border-dark-border bg-transparent transition-colors flex flex-col gap-4 mt-2">
               <h3 className="text-3xl font-serif text-light-text dark:text-dark-text mt-1">
-                Sonnet 4
+                Configuration Export
               </h3>
               <p className="text-light-muted dark:text-dark-muted text-[15px] leading-relaxed flex-grow">
-                Balanced speed and capability — the everyday workhorse for production systems.
+                Export full component specifications, structural reports, and cost breakdowns directly to procurement.
               </p>
               <a href="#" className="text-light-primary dark:text-dark-primary text-[15px] font-medium mt-3 hover:underline transition-all w-fit">
-                View capabilities &rarr;
+                View export tools &rarr;
               </a>
             </div>
           </div>
 
           <div className="w-full p-12 md:p-16 rounded-2xl bg-light-primary dark:bg-dark-primary flex flex-col items-start gap-6 mt-12">
             <h2 className="text-4xl md:text-[44px] tracking-tight font-serif text-white leading-[1.1]">
-              Start building with Claude
+              Start building with Airix
             </h2>
             <p className="text-[17px] text-white/95 leading-relaxed max-w-2xl font-sans">
-              Free API credits to get started. Production-grade reliability when you scale. Cream-button CTA on the coral surface.
+              Design intelligent aircraft and keep your fleet flying safely. The modern toolchain for aerospace engineers.
             </p>
             <button className="mt-4 px-5 py-[10px] bg-light-bg text-light-text rounded-md font-medium hover:opacity-90 transition-opacity">
-              Get API access
+              Enter the Workspace
             </button>
           </div>
         </section>
@@ -119,11 +119,9 @@ export default function DesignSystem() {
           </div>
           
           <div className="mb-16">
-            <h2 className="text-[40px] font-serif mb-4">Copernicus serif + StyreneB sans</h2>
+            <h2 className="text-[40px] font-serif mb-4">EB Garamond serif + Inter sans</h2>
             <p className="text-[16px] text-light-muted dark:text-dark-muted max-w-3xl leading-[1.55]">
-              Slab-serif display for headlines (substituted with EB Garamond), humanist sans for body
-              (Inter). The serif character is the editorial brand voice — switching to sans display would flatten
-              Anthropic into another AI tool.
+              Slab-serif display for headlines (EB Garamond), humanist sans for body (Inter). The serif character is the editorial brand voice — switching to sans display would flatten Airix into another SaaS tool.
             </p>
           </div>
           
@@ -132,10 +130,10 @@ export default function DesignSystem() {
                 <div className="col-span-1 text-[13px] text-light-muted dark:text-dark-muted font-sans leading-relaxed">
                   <p className="font-semibold text-light-text dark:text-dark-text mb-1">display-xl</p>
                   <p>64px / 400 / 1.05 / -1.5px</p>
-                  <p>Copernicus serif</p>
+                  <p>EB Garamond serif</p>
                 </div>
                 <div className="col-span-3 text-[64px] font-serif font-normal leading-[1.05] tracking-[-1.5px]">
-                  Meet your thinking partner
+                  Design your aircraft intelligently
                 </div>
              </div>
              
@@ -155,7 +153,7 @@ export default function DesignSystem() {
                   <p>36px / 400 / 1.15 / -0.5px</p>
                 </div>
                 <div className="col-span-3 text-[36px] font-serif font-normal leading-[1.15] tracking-[-0.5px]">
-                  Build with Claude
+                  Build with Airix
                 </div>
              </div>
 
@@ -173,7 +171,7 @@ export default function DesignSystem() {
                 <div className="col-span-1 text-[13px] text-light-muted dark:text-dark-muted font-sans leading-relaxed">
                   <p className="font-semibold text-light-text dark:text-dark-text mb-1">title-lg</p>
                   <p>22px / 500 / 1.3</p>
-                  <p>StyreneB sans</p>
+                  <p>Inter sans</p>
                 </div>
                 <div className="col-span-3 text-[22px] font-medium leading-[1.3] font-sans">
                   Pro &middot; $20 / month
@@ -186,7 +184,7 @@ export default function DesignSystem() {
                   <p>18px / 500 / 1.4</p>
                 </div>
                 <div className="col-span-3 text-[18px] font-medium leading-[1.4] font-sans">
-                  Code understanding at depth
+                  Physics-aware component models
                 </div>
              </div>
 
@@ -196,7 +194,7 @@ export default function DesignSystem() {
                   <p>16px / 500 / 1.4</p>
                 </div>
                 <div className="col-span-3 text-[16px] font-medium leading-[1.4] font-sans">
-                  Connect Slack workspace
+                  Export CAD specification
                 </div>
              </div>
 
@@ -206,7 +204,7 @@ export default function DesignSystem() {
                   <p>16px / 400 / 1.55</p>
                 </div>
                 <div className="col-span-3 text-[16px] font-normal leading-[1.55] font-sans max-w-3xl">
-                  Claude reasons through complex problems with the patience and care of a thoughtful colleague &mdash; drawing on context across long conversations and large codebases.
+                  Airix instantly validates every design decision against real physics, cost, and structural constraints—so you can see the consequences in seconds, not days.
                 </div>
              </div>
 
@@ -226,7 +224,7 @@ export default function DesignSystem() {
                   <p>13px / 500 / 1.4</p>
                 </div>
                 <div className="col-span-3 text-[13px] font-medium leading-[1.4] font-sans">
-                  Limited beta &middot; Available in API
+                  Limited beta &middot; Available in App
                 </div>
              </div>
 
@@ -236,7 +234,7 @@ export default function DesignSystem() {
                   <p>12px / 500 / 1.5px</p>
                 </div>
                 <div className="col-span-3 text-[12px] font-medium tracking-[1.5px] uppercase font-sans">
-                  NEW &middot; CLAUDE OPUS 4
+                  NEW &middot; PREDICTIVE HEALTH
                 </div>
              </div>
 
@@ -246,7 +244,7 @@ export default function DesignSystem() {
                   <p>14px / 400 / 1.6</p>
                 </div>
                 <div className="col-span-3 text-[14px] font-normal leading-[1.6] font-mono">
-                  <code>claude.messages.create(&#123; model: "opus" &#125;)</code>
+                  <code>airix.fleet.predict(&#123; aircraft: "uav-alpha" &#125;)</code>
                 </div>
              </div>
           </div>
@@ -270,7 +268,7 @@ export default function DesignSystem() {
              <div className="p-6 rounded-xl border border-light-border dark:border-dark-border flex flex-col items-start gap-4 bg-light-bg dark:bg-dark-bg">
                 <p className="text-[14px] font-semibold text-light-text dark:text-dark-text">button-primary</p>
                 <button className="bg-light-primary dark:bg-dark-primary text-white px-5 py-2.5 rounded-md font-medium hover:opacity-90 transition-opacity">
-                  Try Claude
+                  Open Studio
                 </button>
                 <p className="text-[13px] text-light-muted dark:text-dark-muted mt-2">primary coral / on-primary white / md radius</p>
              </div>
@@ -297,7 +295,7 @@ export default function DesignSystem() {
              <div className="p-6 rounded-xl border border-light-border dark:border-dark-border flex flex-col items-start gap-4 bg-light-bg dark:bg-dark-bg">
                 <p className="text-[14px] font-semibold text-light-text dark:text-dark-text">button-secondary</p>
                 <button className="bg-transparent border border-light-secondary-border dark:border-dark-secondary-border text-light-text dark:text-dark-text px-5 py-2.5 rounded-md font-medium hover:bg-light-surface dark:hover:bg-dark-surface transition-colors">
-                  Read the docs
+                  View specs
                 </button>
                 <p className="text-[13px] text-light-muted dark:text-dark-muted mt-2">cream / ink / hairline outline</p>
              </div>
@@ -306,7 +304,7 @@ export default function DesignSystem() {
              <div className="p-6 rounded-xl border border-dark-border flex flex-col items-start gap-4 bg-dark-surface text-white">
                 <p className="text-[14px] font-semibold text-white">button-secondary-on-dark</p>
                 <button className="bg-button-dark-bg border border-dark-border text-white px-5 py-2.5 rounded-md font-medium hover:bg-button-dark-hover transition-colors">
-                  View example
+                  View diagnostic
                 </button>
                 <p className="text-[13px] text-dark-muted mt-2">surface-dark-elevated / on-dark</p>
              </div>
@@ -315,7 +313,7 @@ export default function DesignSystem() {
              <div className="p-6 rounded-xl border border-light-border dark:border-dark-border flex flex-col items-start gap-4 bg-light-bg dark:bg-dark-bg">
                 <p className="text-[14px] font-semibold text-light-text dark:text-dark-text">button-text-link</p>
                 <button className="text-light-text dark:text-dark-text font-medium hover:opacity-70 transition-opacity">
-                  Sign in
+                  Engineer Login
                 </button>
                 <p className="text-[13px] text-light-muted dark:text-dark-muted mt-2">No background; inline link-style</p>
              </div>
@@ -350,13 +348,13 @@ export default function DesignSystem() {
           <div className="text-[12px] font-medium tracking-[0.15em] text-light-muted dark:text-dark-muted uppercase border-b border-light-border dark:border-dark-border pb-2 mb-8">
             04 &mdash; CONNECTOR TILE GRID
           </div>
-          <h3 className="text-4xl font-serif tracking-tight mb-6">Connect everything Claude needs</h3>
+          <h3 className="text-4xl font-serif tracking-tight mb-6">Connect your engineering stack</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
              {[
-               {initial: 'G', title: 'Google Drive', desc: 'Read, summarize, draft — across all your Drive docs.'},
-               {initial: 'S', title: 'Slack', desc: 'Bring Claude into your team conversations.'},
-               {initial: 'N', title: 'Notion', desc: 'Search, edit, and reorganize your knowledge base.'},
-               {initial: 'G', title: 'GitHub', desc: 'Review PRs, run agentic refactors, fix issues.'},
+               {initial: 'C', title: 'CAD Systems', desc: 'Import solid models and structural constraints.'},
+               {initial: 'T', title: 'Telemetry Stream', desc: 'Connect live sensor data for predictive health.'},
+               {initial: 'M', title: 'Maintenance Logs', desc: 'Sync historical service records and lifecycles.'},
+               {initial: 'E', title: 'Procurement ERP', desc: 'Push finalized bills of materials directly to SAP.'},
              ].map((tile, i) => (
                 <div key={i} className="p-5 rounded-xl border border-light-border dark:border-dark-border bg-transparent flex flex-col gap-3">
                   <div className="w-10 h-10 rounded-md bg-light-surface dark:bg-dark-surface flex items-center justify-center font-medium text-light-text dark:text-dark-text border border-light-border dark:border-dark-border">
@@ -379,13 +377,13 @@ export default function DesignSystem() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
              <div className="p-8 rounded-2xl border border-light-border dark:border-dark-border bg-transparent flex flex-col gap-6">
                 <div>
-                   <h3 className="text-2xl font-serif">Free</h3>
+                   <h3 className="text-2xl font-serif">Basic</h3>
                    <div className="text-[40px] font-serif mt-2">$0</div>
                 </div>
                 <ul className="space-y-3 text-sm flex-grow">
-                   <li className="flex gap-2"><span className="text-green-600 dark:text-green-500">✓</span> Limited daily messages</li>
-                   <li className="flex gap-2"><span className="text-green-600 dark:text-green-500">✓</span> Web access</li>
-                   <li className="flex gap-2"><span className="text-green-600 dark:text-green-500">✓</span> Mobile + desktop apps</li>
+                   <li className="flex gap-2"><span className="text-green-600 dark:text-green-500">✓</span> Basic 3D workspace</li>
+                   <li className="flex gap-2"><span className="text-green-600 dark:text-green-500">✓</span> Standard components</li>
+                   <li className="flex gap-2"><span className="text-green-600 dark:text-green-500">✓</span> Manual physics checks</li>
                 </ul>
                 <button className="w-full bg-transparent border border-light-border dark:border-dark-border text-light-text dark:text-dark-text py-2.5 rounded-md font-medium hover:bg-light-surface dark:hover:bg-dark-surface transition-colors">
                   Get started
@@ -397,9 +395,9 @@ export default function DesignSystem() {
                    <div className="text-[40px] font-serif mt-2">$20</div>
                 </div>
                 <ul className="space-y-3 text-sm flex-grow">
-                   <li className="flex gap-2"><span className="text-green-600 dark:text-green-500">✓</span> 5x more usage</li>
-                   <li className="flex gap-2"><span className="text-green-600 dark:text-green-500">✓</span> Project workspaces</li>
-                   <li className="flex gap-2"><span className="text-green-600 dark:text-green-500">✓</span> Advanced research</li>
+                   <li className="flex gap-2"><span className="text-green-600 dark:text-green-500">✓</span> Prompt-to-prototype engine</li>
+                   <li className="flex gap-2"><span className="text-green-600 dark:text-green-500">✓</span> Live physics dashboard</li>
+                   <li className="flex gap-2"><span className="text-green-600 dark:text-green-500">✓</span> Configuration export</li>
                 </ul>
                 <button className="w-full bg-light-primary text-white py-2.5 rounded-md font-medium hover:opacity-90 transition-opacity">
                   Upgrade to Pro
@@ -407,13 +405,13 @@ export default function DesignSystem() {
              </div>
              <div className="p-8 rounded-2xl border border-[#2a2a2b] bg-[#161618] text-white flex flex-col gap-6 transform md:scale-105 shadow-xl relative z-10">
                 <div>
-                   <h3 className="text-2xl font-serif">Team</h3>
-                   <div className="text-[40px] font-serif mt-2">$30 <span className="text-xl font-sans text-[#a09d96]">/ user</span></div>
+                   <h3 className="text-2xl font-serif">Fleet</h3>
+                   <div className="text-[40px] font-serif mt-2">$300 <span className="text-xl font-sans text-[#a09d96]">/ aircraft</span></div>
                 </div>
                 <ul className="space-y-3 text-sm flex-grow text-[#e6dfd8]">
-                   <li className="flex gap-2"><span className="text-green-500">✓</span> Centralized billing</li>
-                   <li className="flex gap-2"><span className="text-green-500">✓</span> Admin console</li>
-                   <li className="flex gap-2"><span className="text-green-500">✓</span> Priority bandwidth</li>
+                   <li className="flex gap-2"><span className="text-green-500">✓</span> Predictive health engine</li>
+                   <li className="flex gap-2"><span className="text-green-500">✓</span> Fleet telemetry sync</li>
+                   <li className="flex gap-2"><span className="text-green-500">✓</span> Automated diagnostics</li>
                 </ul>
                 <button className="w-full bg-light-primary text-white py-2.5 rounded-md font-medium hover:opacity-90 transition-opacity">
                   Contact sales
@@ -425,9 +423,9 @@ export default function DesignSystem() {
                    <div className="text-[40px] font-serif mt-2">Custom</div>
                 </div>
                 <ul className="space-y-3 text-sm flex-grow">
-                   <li className="flex gap-2"><span className="text-green-600 dark:text-green-500">✓</span> SOC 2 + HIPAA</li>
-                   <li className="flex gap-2"><span className="text-green-600 dark:text-green-500">✓</span> SSO + IDP</li>
-                   <li className="flex gap-2"><span className="text-green-600 dark:text-green-500">✓</span> Custom integrations</li>
+                   <li className="flex gap-2"><span className="text-green-600 dark:text-green-500">✓</span> Custom aerospace models</li>
+                   <li className="flex gap-2"><span className="text-green-600 dark:text-green-500">✓</span> On-prem deployment</li>
+                   <li className="flex gap-2"><span className="text-green-600 dark:text-green-500">✓</span> ERP integration</li>
                 </ul>
                 <button className="w-full bg-transparent border border-light-border dark:border-dark-border text-light-text dark:text-dark-text py-2.5 rounded-md font-medium hover:bg-light-surface dark:hover:bg-dark-surface transition-colors">
                   Contact sales
@@ -443,10 +441,10 @@ export default function DesignSystem() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
              <div className="space-y-2">
-                <label className="text-[15px] font-medium">Email address</label>
+                <label className="text-[15px] font-medium">Engineer email</label>
                 <input 
                   type="email" 
-                  placeholder="you@example.com" 
+                  placeholder="name@aeroforge.com" 
                   className="w-full px-3.5 py-2 rounded-md border border-light-border dark:border-dark-border bg-transparent placeholder:text-light-muted dark:placeholder:text-dark-muted focus:outline-none"
                   readOnly
                 />
@@ -455,24 +453,24 @@ export default function DesignSystem() {
                 <label className="text-[15px] font-medium">Email (focused)</label>
                 <input 
                   type="email" 
-                  value="alex@studio.com" 
+                  value="engineer@fleet.com" 
                   className="w-full px-3.5 py-2 rounded-md border border-light-primary outline outline-[3px] outline-light-primary/20 bg-transparent focus:outline-none"
                   readOnly
                 />
              </div>
              <div className="space-y-2">
-                <label className="text-[15px] font-medium">Use case</label>
+                <label className="text-[15px] font-medium">Project Name</label>
                 <input 
                   type="text" 
-                  placeholder="What will you build?" 
+                  placeholder="e.g. UAV-Alpha" 
                   className="w-full px-3.5 py-2 rounded-md border border-light-border dark:border-dark-border bg-transparent placeholder:text-light-muted dark:placeholder:text-dark-muted focus:outline-none"
                   readOnly
                 />
              </div>
              <div className="col-span-1 md:col-span-3 space-y-2 max-w-md">
-                <label className="text-[15px] font-medium">Tell us more</label>
+                <label className="text-[15px] font-medium">Aircraft Requirements</label>
                 <textarea 
-                  placeholder="Anything you want us to know..." 
+                  placeholder="Describe your aircraft..." 
                   className="w-full px-3.5 py-2 rounded-md border border-light-border dark:border-dark-border bg-transparent placeholder:text-light-muted dark:placeholder:text-dark-muted focus:outline-none min-h-[100px]"
                   readOnly
                 />
