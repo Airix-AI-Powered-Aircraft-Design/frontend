@@ -1,29 +1,95 @@
 "use client"
-import { useGLTF } from '@react-three/drei'
-// import { useControls } from 'leva'
+import { useGLTF, Center } from '@react-three/drei'
+import { useRef, useEffect } from 'react'
+import * as THREE from 'three'
+import gsap from 'gsap'
 
 export function HomePageModel(props: any){
 
     const { scene } = useGLTF('/models/f-22_raptor.glb')
+    const modelRef = useRef<THREE.Group>(null)
 
     // Finalized Coordinates
-    const position: [number, number, number] = [9.5, -16.0, -35.6]
-    const rotation: [number, number, number] = [-0.23, 3.35, 0.00]
+    const defaultPosition: [number, number, number] = [0.5, -16.0, -35.6]
+    const defaultRotationY = 3.14
+    const defaultRotation: [number, number, number] = [-0.32, defaultRotationY, 0.00]
 
-    /* 
-    const { posX, posY, posZ } = useControls('Position', {
-        posX: { value: 9.5, min: -100, max: 100, step: 0.1 },
-        posY: { value: -16.0, min: -100, max: 100, step: 0.1 },
-        posZ: { value: -35.6, min: -200, max: 100, step: 0.1 },
-    })
+    // State for interaction
+    const isDragging = useRef(false)
+    const previousMousePosition = useRef({ x: 0, y: 0 })
+    const timeoutRef = useRef<NodeJS.Timeout | null>(null)
 
-    const { rotX, rotY, rotZ } = useControls('Rotation', {
-        rotX: { value: -0.23, min: -Math.PI, max: 6, step: 0.01 },
-        rotY: { value: 3.35, min: -Math.PI, max: 6, step: 0.01 },
-        rotZ: { value: 0.00, min: -Math.PI, max: 6, step: 0.01 },
-    })
-    */
+    const resetRotation = () => {
+        if (!modelRef.current) return
+        gsap.to(modelRef.current.rotation, {
+            y: defaultRotationY,
+            duration: 1.5,
+            ease: "power2.out"
+        })
+    }
 
-    return <primitive object={scene} scale={1} position={position} rotation={rotation} {...props} />
+    const triggerInteraction = () => {
+        if (timeoutRef.current) clearTimeout(timeoutRef.current)
+        if (modelRef.current) {
+            gsap.killTweensOf(modelRef.current.rotation)
+        }
+        
+        // Auto-revert after 1.5s of inactivity
+        timeoutRef.current = setTimeout(() => {
+            resetRotation()
+        }, 1500)
+    }
 
+    useEffect(() => {
+        const handleWheel = (e: WheelEvent) => {
+            if (!modelRef.current) return
+            modelRef.current.rotation.y += e.deltaY * 0.005
+            triggerInteraction()
+        }
+
+        const handlePointerDown = (e: PointerEvent) => {
+            isDragging.current = true
+            previousMousePosition.current = { x: e.clientX, y: e.clientY }
+            triggerInteraction()
+        }
+
+        const handlePointerMove = (e: PointerEvent) => {
+            if (!isDragging.current || !modelRef.current) return
+            const deltaX = e.clientX - previousMousePosition.current.x
+            modelRef.current.rotation.y += deltaX * 0.01
+            previousMousePosition.current = { x: e.clientX, y: e.clientY }
+            triggerInteraction()
+        }
+
+        const handlePointerUp = () => {
+            isDragging.current = false
+            triggerInteraction()
+        }
+
+        window.addEventListener('wheel', handleWheel, { passive: true })
+        window.addEventListener('pointerdown', handlePointerDown)
+        window.addEventListener('pointermove', handlePointerMove)
+        window.addEventListener('pointerup', handlePointerUp)
+
+        return () => {
+            window.removeEventListener('wheel', handleWheel)
+            window.removeEventListener('pointerdown', handlePointerDown)
+            window.removeEventListener('pointermove', handlePointerMove)
+            window.removeEventListener('pointerup', handlePointerUp)
+            if (timeoutRef.current) clearTimeout(timeoutRef.current)
+        }
+    }, [])
+
+    return (
+        <group 
+            ref={modelRef}
+            position={defaultPosition} 
+            rotation={defaultRotation} 
+            {...props}
+        >
+            <Center>
+                <primitive object={scene} scale={1} />
+            </Center>
+        </group>
+    )
 }
