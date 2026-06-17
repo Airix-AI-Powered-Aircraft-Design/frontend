@@ -6,7 +6,7 @@ export function Navbar() {
       
       <div className="flex items-center gap-12 lg:gap-16">
         {/* Logo */}
-        <Link href="/" className="font-serif text-3xl tracking-tight text-light-text dark:text-dark-text">
+        <Link href="/" className="font-garamond-dark text-3xl tracking-tight text-light-text dark:text-dark-text">
           Airix
         </Link>
 

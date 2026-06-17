@@ -43,18 +43,14 @@
   --color-dark-border: #2a2a2b;
 
   /* Typography */
-  --font-display-dark: var(--font-eb-garamond-dark);
-  --font-display-light: var(--font-eb-garamond-light);
-  --font-sans-regular: var(--font-inter-regular);
-  --font-sans-bold: var(--font-inter-bold);
-  
-  /* Map standard tailwind classes to our variables */
-  --font-sans: var(--font-sans-regular), ui-sans-serif, system-ui, sans-serif;
-  --font-serif: var(--font-display-dark), ui-serif, Georgia, serif;
+  --font-garamond-dark: var(--font-eb-garamond-dark), Georgia, serif;
+  --font-garamond-light: var(--font-eb-garamond-light), Georgia, serif;
+  --font-inter-regular: var(--font-inter-regular), system-ui, sans-serif;
+  --font-inter-bold: var(--font-inter-bold), system-ui, sans-serif;
 }
 
 body {
-  font-family: var(--font-sans-regular), sans-serif;
+  font-family: var(--font-inter-regular);
   background-color: var(--color-light-bg);
   color: var(--color-light-text);
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -66,5 +62,5 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-display-dark), serif;
+  font-family: var(--font-garamond-dark);
 }
