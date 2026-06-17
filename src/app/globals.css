@@ -17,6 +17,19 @@
   /* Primary Brand Colors */
   --color-light-primary: #cc785c;
   --color-dark-primary: #cc785c;
+  
+  /* Button States */
+  --color-light-primary-active: #a85b42;
+  --color-dark-primary-active: #a85b42;
+  
+  --color-light-primary-disabled: #e6dfd8;
+  --color-dark-primary-disabled: #161618;
+  
+  --color-light-secondary-border: #f0ece7;
+  --color-dark-secondary-border: #2a2a2b;
+  
+  --color-button-dark-bg: #252320;
+  --color-button-dark-hover: #322f2b;
 
   /* Text Colors */
   --color-light-text: #141413;

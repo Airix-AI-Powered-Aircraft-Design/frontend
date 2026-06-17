@@ -269,7 +269,7 @@ export default function DesignSystem() {
              {/* 1. button-primary */}
              <div className="p-6 rounded-xl border border-light-border dark:border-dark-border flex flex-col items-start gap-4 bg-light-bg dark:bg-dark-bg">
                 <p className="text-[14px] font-semibold text-light-text dark:text-dark-text">button-primary</p>
-                <button className="bg-[#CC785C] text-white px-5 py-2.5 rounded-md font-medium hover:opacity-90 transition-opacity">
+                <button className="bg-light-primary dark:bg-dark-primary text-white px-5 py-2.5 rounded-md font-medium hover:opacity-90 transition-opacity">
                   Try Claude
                 </button>
                 <p className="text-[13px] text-light-muted dark:text-dark-muted mt-2">primary coral / on-primary white / md radius</p>
@@ -278,7 +278,7 @@ export default function DesignSystem() {
              {/* 2. button-primary-active */}
              <div className="p-6 rounded-xl border border-light-border dark:border-dark-border flex flex-col items-start gap-4 bg-light-bg dark:bg-dark-bg">
                 <p className="text-[14px] font-semibold text-light-text dark:text-dark-text">button-primary-active</p>
-                <button className="bg-[#a85b42] text-white px-5 py-2.5 rounded-md font-medium">
+                <button className="bg-light-primary-active dark:bg-dark-primary-active text-white px-5 py-2.5 rounded-md font-medium">
                   Pressed
                 </button>
                 <p className="text-[13px] text-light-muted dark:text-dark-muted mt-2">primary-active darker coral</p>
@@ -287,7 +287,7 @@ export default function DesignSystem() {
              {/* 3. button-primary-disabled */}
              <div className="p-6 rounded-xl border border-light-border dark:border-dark-border flex flex-col items-start gap-4 bg-light-bg dark:bg-dark-bg">
                 <p className="text-[14px] font-semibold text-light-text dark:text-dark-text">button-primary-disabled</p>
-                <button className="bg-[#E6DFD8] dark:bg-dark-surface text-light-muted dark:text-dark-muted px-5 py-2.5 rounded-md font-medium cursor-not-allowed">
+                <button className="bg-light-primary-disabled dark:bg-dark-primary-disabled text-light-muted dark:text-dark-muted px-5 py-2.5 rounded-md font-medium cursor-not-allowed">
                   Disabled
                 </button>
                 <p className="text-[13px] text-light-muted dark:text-dark-muted mt-2">cream-tinted disabled fill</p>
@@ -296,19 +296,19 @@ export default function DesignSystem() {
              {/* 4. button-secondary */}
              <div className="p-6 rounded-xl border border-light-border dark:border-dark-border flex flex-col items-start gap-4 bg-light-bg dark:bg-dark-bg">
                 <p className="text-[14px] font-semibold text-light-text dark:text-dark-text">button-secondary</p>
-                <button className="bg-transparent border border-[#F0ECE7] dark:border-dark-border text-light-text dark:text-dark-text px-5 py-2.5 rounded-md font-medium hover:bg-light-surface dark:hover:bg-dark-surface transition-colors">
+                <button className="bg-transparent border border-light-secondary-border dark:border-dark-secondary-border text-light-text dark:text-dark-text px-5 py-2.5 rounded-md font-medium hover:bg-light-surface dark:hover:bg-dark-surface transition-colors">
                   Read the docs
                 </button>
                 <p className="text-[13px] text-light-muted dark:text-dark-muted mt-2">cream / ink / hairline outline</p>
              </div>
              
              {/* 5. button-secondary-on-dark */}
-             <div className="p-6 rounded-xl border border-[#2a2a2b] flex flex-col items-start gap-4 bg-[#161618] text-white">
+             <div className="p-6 rounded-xl border border-dark-border flex flex-col items-start gap-4 bg-dark-surface text-white">
                 <p className="text-[14px] font-semibold text-white">button-secondary-on-dark</p>
-                <button className="bg-[#252320] border border-[#2a2a2b] text-white px-5 py-2.5 rounded-md font-medium hover:bg-[#322f2b] transition-colors">
+                <button className="bg-button-dark-bg border border-dark-border text-white px-5 py-2.5 rounded-md font-medium hover:bg-button-dark-hover transition-colors">
                   View example
                 </button>
-                <p className="text-[13px] text-[#a09d96] mt-2">surface-dark-elevated / on-dark</p>
+                <p className="text-[13px] text-dark-muted mt-2">surface-dark-elevated / on-dark</p>
              </div>
              
              {/* 6. button-text-link */}
@@ -323,7 +323,7 @@ export default function DesignSystem() {
              {/* 7. text-link-coral */}
              <div className="p-6 rounded-xl border border-light-border dark:border-dark-border flex flex-col items-start gap-4 bg-light-bg dark:bg-dark-bg">
                 <p className="text-[14px] font-semibold text-light-text dark:text-dark-text">text-link-coral</p>
-                <a href="#" className="text-[#CC785C] font-medium hover:underline transition-all inline-flex items-center gap-1">
+                <a href="#" className="text-light-primary dark:text-dark-primary font-medium hover:underline transition-all inline-flex items-center gap-1">
                   Read the research &rarr;
                 </a>
                 <p className="text-[13px] text-light-muted dark:text-dark-muted mt-2">Inline coral link in body. The signature small detail.</p>
@@ -333,10 +333,10 @@ export default function DesignSystem() {
              <div className="p-6 rounded-xl border border-light-border dark:border-dark-border flex flex-col items-start gap-4 bg-light-bg dark:bg-dark-bg">
                 <p className="text-[14px] font-semibold text-light-text dark:text-dark-text">button-icon-circular</p>
                 <div className="flex gap-3">
-                  <button className="w-9 h-9 rounded-full bg-transparent border border-[#F0ECE7] dark:border-dark-border flex items-center justify-center text-light-text dark:text-dark-text hover:bg-light-surface dark:hover:bg-dark-surface transition-colors">
+                  <button className="w-9 h-9 rounded-full bg-transparent border border-light-secondary-border dark:border-dark-secondary-border flex items-center justify-center text-light-text dark:text-dark-text hover:bg-light-surface dark:hover:bg-dark-surface transition-colors">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
                   </button>
-                  <button className="w-9 h-9 rounded-full bg-transparent border border-[#F0ECE7] dark:border-dark-border flex items-center justify-center text-light-text dark:text-dark-text hover:bg-light-surface dark:hover:bg-dark-surface transition-colors">
+                  <button className="w-9 h-9 rounded-full bg-transparent border border-light-secondary-border dark:border-dark-secondary-border flex items-center justify-center text-light-text dark:text-dark-text hover:bg-light-surface dark:hover:bg-dark-surface transition-colors">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 18l6-6-6-6"/></svg>
                   </button>
                 </div>
