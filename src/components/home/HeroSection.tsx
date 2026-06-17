@@ -17,7 +17,7 @@ export function HeroSection() {
                         </div>
                     </div>
 
-                    <div className="w-full h-full flex justify-center items-end ">
+                    <div className="w-full h-full flex justify-center items-end relative">
                         <div className="w-full h-[50%]  flex justify-center items-center">
                              <div className="w-[90%] max-w-5xl h-[140px] rounded-[50%] border border-light-border dark:border-dark-border flex justify-center items-end relative">
                             
@@ -30,10 +30,80 @@ export function HeroSection() {
 
                         </div>
                         </div>
+
+
+                        {/* Card 1 (Top Left) */}
+                        <div className="absolute top-[10%] left-6 md:left-10 group z-20">
+                            {/* Angled Connector Line */}
+                            <svg className="absolute top-1/2 left-[100%] w-[80px] md:w-[120px] h-[60px] overflow-visible z-0" viewBox="0 0 120 60" fill="none">
+                                <path d="M 0 0 L 60 0 L 120 60" stroke="currentColor" strokeWidth="1" className="text-light-text/30 dark:text-dark-text/30" />
+                                <circle cx="120" cy="60" r="2.5" fill="currentColor" className="text-light-text dark:text-dark-text" />
+                            </svg>
+                            
+                            {/* Card Content */}
+                            <div className="relative w-[180px] md:w-[200px] rounded-[16px] border border-light-border dark:border-dark-border bg-white/70 dark:bg-dark-bg/70 backdrop-blur-md flex flex-col p-2 shadow-sm z-10">
+                                <div className="px-2 pt-1 pb-2 border-b border-light-border dark:border-dark-border">
+                                    <h3 className="text-[12px] font-medium font-sans text-light-text dark:text-dark-text tracking-wide">
+                                        Brembo Calipers
+                                    </h3>
+                                </div>
+                                <div className="w-full h-[90px] md:h-[100px] mt-2 rounded-[12px] bg-light-surface/80 dark:bg-[#161618]/80 flex items-center justify-center overflow-hidden">
+                                    <span className="text-light-muted dark:text-dark-muted text-[9px] font-medium tracking-widest uppercase">Insert Image</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Card 2 (Top Right) */}
+                        <div className="absolute top-[5%] right-6 md:right-10 group z-20">
+                            {/* Angled Connector Line */}
+                            <svg className="absolute top-1/2 right-[100%] w-[80px] md:w-[120px] h-[60px] overflow-visible z-0" viewBox="0 0 120 60" fill="none">
+                                <path d="M 120 0 L 60 0 L 0 60" stroke="currentColor" strokeWidth="1" className="text-light-text/30 dark:text-dark-text/30" />
+                                <circle cx="0" cy="60" r="2.5" fill="currentColor" className="text-light-text dark:text-dark-text" />
+                            </svg>
+                            
+                            {/* Card Content */}
+                            <div className="relative w-[180px] md:w-[200px] rounded-[16px] border border-light-border dark:border-dark-border bg-white/70 dark:bg-dark-bg/70 backdrop-blur-md flex flex-col p-2 shadow-sm z-10">
+                                <div className="px-2 pt-1 pb-2 border-b border-light-border dark:border-dark-border">
+                                    <h3 className="text-[12px] font-medium font-sans text-light-text dark:text-dark-text tracking-wide">
+                                        Flight Specifications
+                                    </h3>
+                                </div>
+                                <div className="w-full mt-2.5 px-2 pb-1.5 flex flex-col gap-3">
+                                    <div className="flex flex-col">
+                                        <span className="text-light-muted dark:text-dark-muted text-[9px] font-semibold uppercase tracking-widest">Max Flight Time</span>
+                                        <span className="text-light-text dark:text-dark-text text-[14px] font-medium font-sans mt-0.5">300 Hours</span>
+                                    </div>
+                                    <div className="flex flex-col">
+                                        <span className="text-light-muted dark:text-dark-muted text-[9px] font-semibold uppercase tracking-widest">Failure Rate</span>
+                                        <span className="text-light-text dark:text-dark-text text-[14px] font-medium font-sans mt-0.5">0.01%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Card 3 (Bottom Right) */}
+                        <div className="absolute bottom-[8%] right-8 md:right-16 group z-20">
+                            {/* Angled Connector Line (Goes Left and Up) */}
+                            <svg className="absolute top-1/2 right-[100%] w-[100px] md:w-[160px] h-[80px] overflow-visible z-0 translate-y-[-100%]" viewBox="0 0 160 80" fill="none">
+                                <path d="M 160 80 L 100 80 L 0 0" stroke="currentColor" strokeWidth="1" className="text-light-text/30 dark:text-dark-text/30" />
+                                <circle cx="0" cy="0" r="2.5" fill="currentColor" className="text-light-text dark:text-dark-text" />
+                            </svg>
+                            
+                            {/* Card Content */}
+                            <div className="relative w-[180px] md:w-[200px] rounded-[16px] border border-light-border dark:border-dark-border bg-white/70 dark:bg-dark-bg/70 backdrop-blur-md flex flex-col p-2 shadow-sm z-10">
+                                <div className="px-2 pt-1 pb-2 border-b border-light-border dark:border-dark-border">
+                                    <h3 className="text-[12px] font-medium font-sans text-light-text dark:text-dark-text tracking-wide">
+                                        Adaptive Air Suspension
+                                    </h3>
+                                </div>
+                                <div className="w-full h-[90px] md:h-[100px] mt-2 rounded-[12px] bg-light-surface/80 dark:bg-[#161618]/80 flex items-center justify-center overflow-hidden">
+                                    <span className="text-light-muted dark:text-dark-muted text-[9px] font-medium tracking-widest uppercase">Insert Image</span>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                     
-                
-
                 </div>
 
                 <div className="w-full h-[15%]  px-6 md:px-8"></div>
