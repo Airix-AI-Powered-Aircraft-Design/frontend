@@ -3,7 +3,8 @@
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
-import { Navbar } from "../components/Navbar";
+import { Navbar } from "../components/home/Navbar";
+import { HeroSection } from "@/components/home/HeroSection";
 
 export default function Home() {
   const { theme, setTheme } = useTheme();
@@ -15,7 +16,7 @@ export default function Home() {
     <div className="w-full min-h-screen flex flex-col bg-light-bg dark:bg-dark-bg transition-colors duration-300 font-sans">
       <Navbar />
       
-      <main className="flex-1 flex flex-col items-center justify-center p-8 text-light-text dark:text-dark-text gap-8">
+      {/* <main className="flex-1 flex flex-col items-center justify-center p-8 text-light-text dark:text-dark-text gap-8">
         <div className="max-w-2xl text-center space-y-6">
           <h1 className="text-5xl md:text-6xl tracking-tight leading-tight font-serif">
             Welcome to <span className="text-light-primary dark:text-dark-primary">Airix</span>
@@ -42,7 +43,8 @@ export default function Home() {
             )}
           </div>
         </div>
-      </main>
+      </main> */}
+      <HeroSection />
     </div>
   );
 }
